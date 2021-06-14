@@ -58,6 +58,23 @@
       "source": "KNOWLEDGE_MANAGER"
     }
   },
+  "synonyms": {
+    "oneWay": [],
+    "synonymSet": [
+      [
+        "geschäftszeiten",
+        "offen",
+        "öffnungszeiten",
+        "zeiten",
+        "geöffnet"
+      ],
+      [
+        "hauptrufnummer",
+        "telefon",
+        "telefonnummer"
+      ]
+    ]
+  },
   "localizations": {},
   "additionalSearchablePlaces": [],
   "querySuggestions": {
