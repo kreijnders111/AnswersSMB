@@ -1,0 +1,77 @@
+{
+  "$schema": "https://schema.yext.com/config/answers/answers-config/v1",
+  "$id": "answers",
+  "name": "Answers",
+  "supportedLocales": [
+    "de"
+  ],
+  "countryRestrictions": [],
+  "verticals": {
+    "faqs": {
+      "entityTypes": [
+        "faq"
+      ],
+      "name": "FAQs",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "keywords": {
+          "textSearch": true
+        },
+        "question": {
+          "semanticTextSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
+    "locations": {
+      "directAnswers": {
+        "fieldValues": {
+          "eligibleFields": [
+            "hours",
+            "mainPhone"
+          ],
+          "predictionMode": "FIELD_NAME"
+        }
+      },
+      "entityTypes": [
+        "location"
+      ],
+      "name": "Locations",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "builtin.location": {
+          "nlpFilter": true
+        },
+        "keywords": {
+          "textSearch": true
+        },
+        "name": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    }
+  },
+  "localizations": {},
+  "additionalSearchablePlaces": [],
+  "querySuggestions": {
+    "disablePopularQueries": false,
+    "popularQueriesBlacklistedTerms": [],
+    "universalPrompts": [],
+    "verticalPrompts": {
+      "faqs": [
+        "[[name]]"
+      ],
+      "locations": [
+        "Locations near [[address.city]]",
+        "Locations near [[address.region]]"
+      ]
+    }
+  }
+}
